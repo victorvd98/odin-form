@@ -1,0 +1,86 @@
+.container-daddy {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    gap: 20px;
+    /* Added spacing between child elements */
+    height: 100%;
+    width: 100%;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+    /* Added spacing between nested elements */
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    border-bottom: 2px solid #ccc;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    flex: 2;
+    gap: 20px;
+    padding: 15px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.top-main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bottom-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
