@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Norse-Bold';
-    src: url('./Norse-Bold.otf') format('opentype');
+    src: url('./assets/Norse-Bold.otf') format('opentype');
     font-weight: normal;
     font-style: normal;
 }
@@ -16,6 +16,8 @@
 }
 
 .header-container {
+    position: relative;
+    /* Set the container as the positioning context */
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -25,6 +27,23 @@
     border: 1px solid black;
     border-radius: 5px;
     background-color: #f9f9f9;
+    overflow: hidden;
+    /* Ensures the image doesn't overflow the container */
+}
+
+.header-background {
+    position: absolute;
+    /* Position the image relative to the container */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Make the image cover the full width */
+    height: 100%;
+    /* Make the image cover the full height */
+    object-fit: cover;
+    /* Ensures the image scales proportionally to fill the container */
+    z-index: -1;
+    /* Places the image behind other content */
 }
 
 .header {
