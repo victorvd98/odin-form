@@ -23,12 +23,9 @@
     flex: 1;
     gap: 10px;
     /* Added spacing between nested elements */
-    padding: 15px;
     border: 1px solid black;
     border-radius: 5px;
-    background-color: #f9f9f9;
-    overflow: hidden;
-    /* Ensures the image doesn't overflow the container */
+    background-color: rgba(0, 0, 0, 0);
 }
 
 .header-background {
@@ -125,4 +122,14 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.top-header {
+    min-height: 50px;
+    opacity: 0;
+}
+
+.bottom-header {
+    min-height: 200px;
+    /* Prevents collapsing */
 }
